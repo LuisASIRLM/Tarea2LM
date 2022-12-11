@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../imagenes/icon.png">
+</head>
+
+<body>
+    <form action="../formulario/preguntas.xhtml" method="post">
+        <fieldset>
+            <legend>PERSONA</legend>
+            <label for="name">Nombre</label>
+            <input id="name" type="text" name="Nombre" placeholder="Ponga su Nombre" required>
+            <br />
+            <label for="email">e-mail</label>
+            <input id="email" type="email" name="email" placeholder="Ponga su correo electronico" required>
+            <br />
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>MASCOTA</legend>
+            <label for="si">Si</label>
+            <input id="si" type="radio" value="si" name="si">
+            <br />
+            <label for="no">No</label>
+            <input id="no" type="radio" value="no" name="no">
+            <br />
+            <p>Si tiene mas de 1 tipo de mascota seleccionelas manteniendo pulsada la tecla "Ctrl"</p>
+            <br />
+            <label for="tipo">Tipo de Mascota</label>
+            <select name="mascota" multiple="multiple" id="mascota">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="ave">Ave</option>
+                <option value="reptil">Reptil</option>
+                <option value="anfibio">Anfibio</option>
+                <option value="pez">Peces</option>
+            </select>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>COMENTARIOS</legend>
+            <label for="comentario">Comentario</label>
+            <textarea name="comentario" id="comentario" cols="40" rows="4"></textarea>
+        </fieldset>
+        <br />
+        <legend>Acepto ingresar en la lista de usuarios y recibir comunicaciones y actualizaciones</legend>
+        <label for="si">Si</label>
+        <input id="si" type="checkbox" value="si" name="si">
+        <label for="no">No</label>
+        <input id="no" type="checkbox" value="no" name="no">
+        <br />
+        <input type="submit" value="Enviar" name="enviar">
+        <input type="reset" value="Restablecer" name="restablecer">
+    </form>
+</body>
